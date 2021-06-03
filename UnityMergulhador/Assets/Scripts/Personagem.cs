@@ -19,7 +19,7 @@ public class Personagem : MonoBehaviour
             olhandoDireita=!olhandoDireita;
             transform.Rotate(0f,180f,0f);
         }
-        transform.position += new Vector3(movimento, 0, 0) * Time.deltaTime * MovementSpeed;
+        transform.position += new Vector3(movimento*2, 0, 0) * Time.deltaTime * MovementSpeed;
        
         animator.SetFloat("velocidade", Mathf.Abs(direcao));
         if(_rigidbody.velocity.y>0.01f || _rigidbody.velocity.y<-0.01f){
