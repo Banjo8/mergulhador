@@ -573,7 +573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 1.5
   JumpForce: 5
-  animator: {fileID: 0}
+  animator: {fileID: 792817456}
   NoMar: 0
 --- !u!61 &792817459
 BoxCollider2D:
