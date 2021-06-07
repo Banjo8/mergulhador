@@ -19,7 +19,7 @@ public class AumentarOxigenio : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D jogador)
     {
-        jogador.GetComponent<Oxigenio>().AumentarOxi();
+        jogador.GetComponent<Nadar>().AumentarOxi();
         Destroy(gameObject);
     }
 }

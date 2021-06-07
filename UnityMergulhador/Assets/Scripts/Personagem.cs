@@ -31,7 +31,7 @@ public class Personagem : MonoBehaviour
         }
         //Animacao pulo
         animator.SetFloat("velocidade", Mathf.Abs(direcao));
-        if(_rigidbody.velocity.y>0.01f || _rigidbody.velocity.y<-0.01f){
+        if(_rigidbody.velocity.y>0.001f || _rigidbody.velocity.y<-0.001f){
             animator.SetFloat("velocidade", 0);
         }
         //Pulo
@@ -40,15 +40,15 @@ public class Personagem : MonoBehaviour
             _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
         }
 
-        if(Input.GetKey(KeyCode.Z) && gameObject.transform.position.y <= 0)
+        if(Input.GetKey(KeyCode.LeftShift) && gameObject.transform.position.y <= -10f)
         {
-            _rigidbody.AddForce(new Vector2(0, JumpForce/50*(-gameObject.transform.position.y)), ForceMode2D.Impulse);
-            print("foi");
+            //_rigidbody.AddForce(new Vector2(0, JumpForce/50*(-gameObject.transform.position.y)), ForceMode2D.Impulse);
+            gameObject.transform.position = new Vector3 (2.53f,-0.63f,-0.1f);
         }
 
-        if(gameObject.transform.position.y <= 0)
-        {
-            _rigidbody.gravityScale = 1 + (gameObject.transform.position.y)/Math.Abs(-1 + gameObject.transform.position.y);
-        }
+        //if(gameObject.transform.position.y <= -10f)
+        //{
+        //    _rigidbody.gravityScale = 1 + (gameObject.transform.position.y)/Math.Abs(-1 + gameObject.transform.position.y);
+        //}
     }
 }
