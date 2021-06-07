@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 524945199}
-  posX: 5.929
+  posX: 6
   posY: -2.625
   previous: Loja
 --- !u!1 &476175739
