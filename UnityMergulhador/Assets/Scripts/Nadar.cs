@@ -39,7 +39,7 @@ public class Nadar : MonoBehaviour
         }
     public void DiminuirOxi1()
     {
-        maxOxi -= 5;
+        oxigenio -= 5;
     }
 
     public void DiminuirOxi2()

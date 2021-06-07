@@ -368,11 +368,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8fbe7c2611365e4696319e0bbbc9558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vel1: 0.025
-  vel2: 0.075
-  dist1: 0
-  dist2: 0
-  cooldown: 0
+  vel1: 0.005
+  vel2: 0.01
+  dist1: 5
+  dist2: 2.5
+  cooldown: 0.1
   player: {fileID: 1201899722}
 --- !u!50 &264614326
 Rigidbody2D:
@@ -389,12 +389,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &264614327
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -496,7 +496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264614324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.47, y: 0.65, z: 0}
+  m_LocalPosition: {x: 7.25, y: -10.94, z: -0.1}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -824,12 +824,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &713012281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,8 +842,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a4ec22984a910a4c912306ccce57841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vel: 0.09
-  dist: 20
+  vel: 0.01
+  dist: 5
   player: {fileID: 1201899722}
 --- !u!212 &713012282
 SpriteRenderer:
@@ -904,7 +904,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713012278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.56, y: -0.54, z: 0}
+  m_LocalPosition: {x: -7.29, y: -12.87, z: -0.1}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -923,8 +923,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1201899722}
-  peixe2: {fileID: 0}
-  box: {fileID: 0}
 --- !u!60 &713012285
 PolygonCollider2D:
   m_ObjectHideFlags: 0

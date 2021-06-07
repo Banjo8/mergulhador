@@ -23,9 +23,11 @@ public class Movimento1 : MonoBehaviour
         {
             transform.position += diff*vel/(diff.magnitude);
         }
-        if (gameObject.transform.position.y <= -2f)
-        {
-            _rigidbody.gravityScale = 0f;
-        }
+        
+        //if (gameObject.transform.position.y <= -2f)
+        //{
+        //    _rigidbody.gravityScale = 0f;
+        //}
+        //else {_rigidbody.gravityScale = 1f;}
     }
 }
